@@ -21,7 +21,7 @@ public function __construct()
 	}
 	public function proses_login()
     {
-        // var_dump('a');exit;
+       
     $user =  $this->input->post("username", TRUE);
     $pass =  $this->input->post("password", TRUE);
 
@@ -47,7 +47,7 @@ public function __construct()
             'level' => $level,
         );
 
-    //    var_dump($data_session);exit;
+  
 
         $this->session->set_userdata($data_session);
 

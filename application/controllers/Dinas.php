@@ -12,22 +12,18 @@ class Dinas extends CI_Controller {
 	public function index()
 	{
 		$data['data']=$this->M_Dinas->getdata()->result();
-		// var_dump($data);exit;
+		
 
 		$this->load->view('t_admin/header'); 
 		$this->load->view('t_admin/nav');
 		$this->load->view('Dinas',$data);
 		$this->load->view('t_admin/footer',$data);
-		// $this->load->view('layout/header'); 
-		// $this->load->view('layout/menu');
-		// $this->load->view('index',$data);
-		// $this->load->view('layout/footer',$data);
+		
 	}
 	public function peta()
 	{
 		$data['data']=$this->M_Dinas->getdata()->result();
-		// var_dump($data);exit;
-
+		
 		$this->load->view('t_admin/header'); 
 		$this->load->view('t_admin/nav');
 		$this->load->view('peta',$data);

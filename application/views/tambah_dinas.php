@@ -15,48 +15,30 @@
                 </div>
                 <div class="card-body">
                     <form action="<?php echo base_url('dinas/proses_tambah_data') ?>" method="POST" enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Nama Dinas</label>
-                                    <input type="text" class="form-control" name="nama_dinas" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Alamat</label>
-                                    <input type="text" class="form-control" name="alamat" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Latitude</label>
-                                    <input type="text" class="form-control" name="lat" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Longtitude</label>
-                                    <input type="text" class="form-control" name="lng" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Foto</label>
-                                    <input type="file" accept=".jpg,.jpeg,.png" class="form-control" name="foto">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                            </div>
-                            <div class="col-md-2">
-                                <input type="submit" value="Simpan" class="btn btn-primary">
-                            </div>
-                            <div class="col-md-2">
-                                <input type="reset" value="Reset" class="btn btn-success">
-                            </div>
-                            <div class="col-md-2">
-                                <a href="<?php echo base_url('dinas') ?>" class="btn btn-secondary">Kembali</a>
-                            </div>
+                        <div class="form-group">
+                            <label for="nama_dinas">Nama Dinas</label>
+                            <input type="text" class="form-control" id="nama_dinas" name="nama_dinas" placeholder="Masukkan nama dinas" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan alamat" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lat">Latitude</label>
+                            <input type="text" class="form-control" id="lat" name="lat" placeholder="Masukkan latitude" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lng">Longitude</label>
+                            <input type="text" class="form-control" id="lng" name="lng" placeholder="Masukkan longitude" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="foto">Foto</label>
+                            <input type="file" class="form-control" id="foto" name="foto" accept=".jpg,.jpeg,.png">
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" value="Simpan" class="btn btn-primary mx-2">
+                            <input type="reset" value="Reset" class="btn btn-success mx-2">
+                            <a href="<?php echo base_url('dinas') ?>" class="btn btn-secondary mx-2">Kembali</a>
                         </div>
                     </form>
                 </div>
@@ -80,24 +62,7 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-<!-- Logout-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Bootstrap core JavaScript-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>

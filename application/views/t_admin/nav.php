@@ -11,9 +11,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class=></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Kecamatan Pelaihari <?= $this->session->userdata('level'); ?><sup></sup></div>
+                <div class="sidebar-brand-text mx-3">Kecamatan Pelaihari <?= $this->session->userdata(''); ?><sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -36,11 +36,6 @@
                 <a class="nav-link" href="<?php echo base_url('dinas') ?>">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Data  Dinas</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url('dinas/peta') ?>">
-                    <i class="fas fa-fw fa-map-marked-alt"></i>
-                    <span>Data Peta</span></a>
             </li>
 
             
